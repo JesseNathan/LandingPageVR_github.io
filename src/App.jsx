@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Circle from './components/circle';
 import VRImage from './components/VRManImage';
 import Footer from "./components/Footer";
-import Subscribe from './components/Newsletter'
+import Newsletter from './Components/Newsletter';
 import img1 from './image/vrGirl.png'
 import img2 from './image/VR-Images1.jpg'
 import img3 from './image/VR-Images2.jpg'
@@ -99,7 +99,7 @@ function App() {
         <VRImage />
       </div>
 
-     <Subscribe />
+     <Newsletter />
 
     <Footer />
     </body>

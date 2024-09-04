@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import '../subscribe.css'; 
 import '../Animation/animation.css'; 
 
-function Newsletter() {
+export default function Newsletter() {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -40,5 +40,3 @@ function Newsletter() {
     </div>
   );
 }
-
-export default Newsletter;

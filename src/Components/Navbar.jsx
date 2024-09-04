@@ -2,7 +2,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faCircleUser } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faTwitter, faInstagram,} from '@fortawesome/free-brands-svg-icons'
 import vrGear from '../image/Vrgear.png'
 
 export default function Navbar() {
