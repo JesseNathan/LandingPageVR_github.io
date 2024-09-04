@@ -1,0 +1,81 @@
+/* animation hero */
+@keyframes slideIn {
+  from {
+      filter: blur(5px);
+      opacity: 0;
+      transform: translateX(-50%);
+      transition: all 1s ease-in;
+  }
+  to {
+      filter: blur(0);
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes zoomInScale {
+  0% {
+    opacity: 0;
+    transform: translateY(10%) scale(0.9); /* Mulai dengan opacity 0 dan sedikit diperbesar */
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(-60px, -2.5px) scale(1.2); /* Di titik tengah, gambar sudah mulai bergerak dan diperbesar */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-70px, -5px) scale(1.35); /* Akhir animasi: gambar diposisikan dan diperbesar */
+  }
+}
+
+
+.hero-content {
+  max-width: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  animation: slideIn 1.5s ease-in-out forwards;
+  margin-top: -100px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1);
+  animation: zoomInScale 1s ease-in-out forwards 0.4s;
+  z-index: 1;
+}
+
+.hero-image img {
+  opacity: 0;
+  max-width: 100%;
+  height: auto;
+  animation: zoomInScale 1s ease-in-out forwards .6s;
+  object-fit: cover;
+}
+/* End hero animation */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+    scale: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.newsletter-container {
+  opacity: 0; 
+  transform: translateY(50%);
+  scale: 0.5; 
+  transition: opacity 0.5s linear, transform 0.5s linear;
+}
+
+/* Kelas yang ditambahkan saat elemen terlihat */
+.newsletter-container.in-view {
+  animation: appear 0.5s linear forwards;
+}
+
+
