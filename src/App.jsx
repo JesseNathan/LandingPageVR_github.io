@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import Navbar from './Components/Navbar'
-import Circle from './Components/circle';
-import VRImage from './Components/VRManImage';
-import Footer from "./Components/Footer";
-import Subscribe from './Components/Newsletter'
+import Navbar from './components/Navbar'
+import Circle from './components/circle';
+import VRImage from './components/VRManImage';
+import Footer from "./components/Footer";
+import Subscribe from './components/Newsletter'
 import img1 from './image/vrGirl.png'
 import img2 from './image/VR-Images1.jpg'
 import img3 from './image/VR-Images2.jpg'
