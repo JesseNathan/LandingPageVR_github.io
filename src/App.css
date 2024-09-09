@@ -37,6 +37,19 @@ nav ul li a {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 20px;
+  position: relative;
+}
+
+nav ul li a::before{
+  width: 0;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: white;
+}
+
+nav ul li a::after:hover{
+  width: 100%;
 }
 
 .trapesium {
@@ -129,7 +142,7 @@ nav ul li a {
 
 .btn-primary {
   background: rgb(42,169,223);  
-  background: linear-gradient ;
+  background: linear-gradient(90deg, #2AA9DF, #AE0CA7);
   color: white;
   padding: 10px 20px;
   text-decoration: none;

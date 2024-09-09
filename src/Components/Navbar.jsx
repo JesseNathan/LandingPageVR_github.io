@@ -3,6 +3,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faCircleUser } from '@fortawesome/free-solid-svg-icons'
 import vrGear from '../image/Vrgear.png'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (

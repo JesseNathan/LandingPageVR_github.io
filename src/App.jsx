@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from './components/Navbar'
-import Circle from './components/circle';
-import VRImage from './components/VRManImage';
-import Footer from "./components/Footer";
+import Circle from './Components/circle';
+import VRImage from './Components/VRManImage';
+import Footer from "./Components/Footer";
 import Newsletter from './Components/Newsletter';
 import img1 from './image/vrGirl.png'
 import img2 from './image/VR-Images1.jpg'
@@ -12,8 +12,16 @@ import './Animation/animation.css';
 import './section2.css'
 import './subscribe.css'
 import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  <BrowserRouter>
+    <Routes>
+      <Route index element = {<home/>}/>
+      <Route path ='Product' element = {<product/ >}/>
+    </Routes>
+  </BrowserRouter>
+
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -23,7 +31,7 @@ function App() {
           entry.target.classList.add('slide-up');
         }
       });
-    }, { threshold: 0.1 });
+    });
 
     const items = containerRef.current.querySelectorAll('.vr-item');
     items.forEach((element, index) => {
