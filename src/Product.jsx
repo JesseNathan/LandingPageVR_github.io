@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Navbar from './components/Navbar'
+import Navbar from './Components/Navbar'
 import Circle from './Components/circle';
 import VRImage from './Components/VRManImage';
 import Footer from "./Components/Footer";
