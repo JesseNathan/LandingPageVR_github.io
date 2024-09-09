@@ -29,6 +29,8 @@ function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('slide-up');
+        }else{
+          entry.target.classList.remove('slide-up');
         }
       });
     });
