@@ -66,6 +66,13 @@
   }
 }
 
+.hero-content2{
+  max-width: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
 .newsletter-container {
   opacity: 0; 
   transform: translateY(50%);
